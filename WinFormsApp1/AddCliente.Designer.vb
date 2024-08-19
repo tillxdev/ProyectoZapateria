@@ -44,6 +44,7 @@ Partial Class AddCliente
         Label2 = New Label()
         Label1 = New Label()
         txtID = New TextBox()
+        btnCancelar = New Button()
         SuspendLayout()
         ' 
         ' txtDni
@@ -122,7 +123,7 @@ Partial Class AddCliente
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Sitka Banner", 15F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
+        Label5.Font = New Font("Sitka Banner", 15F, FontStyle.Bold Or FontStyle.Italic Or FontStyle.Underline, GraphicsUnit.Point)
         Label5.Location = New Point(40, 30)
         Label5.Name = "Label5"
         Label5.Size = New Size(150, 29)
@@ -228,11 +229,21 @@ Partial Class AddCliente
         txtID.Size = New Size(37, 23)
         txtID.TabIndex = 34
         ' 
+        ' btnCancelar
+        ' 
+        btnCancelar.Location = New Point(216, 411)
+        btnCancelar.Name = "btnCancelar"
+        btnCancelar.Size = New Size(75, 23)
+        btnCancelar.TabIndex = 56
+        btnCancelar.Text = "Cancelar"
+        btnCancelar.UseVisualStyleBackColor = True
+        ' 
         ' AddCliente
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(454, 450)
+        Controls.Add(btnCancelar)
         Controls.Add(txtDni)
         Controls.Add(lblDni)
         Controls.Add(txtApellidos)
@@ -283,4 +294,5 @@ Partial Class AddCliente
     Friend WithEvents Label2 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents txtID As TextBox
+    Friend WithEvents btnCancelar As Button
 End Class
