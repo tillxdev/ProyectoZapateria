@@ -11,7 +11,6 @@
         ' Cargar datos según el tipo de persona
         CargarDatosCliente(_idPersona)
 
-
     End Sub
 
 
@@ -47,6 +46,7 @@
                 Dim personaJuridica As PersonaJuridica = PersonaJuridica.BuscarPersonaJuridicaPorId(idPersona)
 
                 If personaJuridica IsNot Nothing Then
+
                     ' Es una PersonaJuridica
                     MostrarCamposPersonaJuridica()
 
